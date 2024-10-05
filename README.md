@@ -1,84 +1,84 @@
-# 🔐 Enkripsi dan Proteksi Kode Python Anda dengan PyArmor 7 🔐
+# 🔐 Alat Enkripsi dan Proteksi Kode Python 🔐
 
-Selamat datang di proyek **Enkripsi File Python**! Proyek ini bertujuan untuk memberikan alat yang dapat mengenkripsi dan melindungi file serta folder dalam aplikasi Python Anda. Kami juga melindungi kode Python menggunakan **PyArmor 7**, sehingga kode Anda lebih sulit diubah atau dibaca oleh pihak lain.
+Hai! Saya telah mengembangkan **Alat Enkripsi File Python** ini sebagai solusi untuk mengenkripsi file dan folder, serta melindungi kode Python dari pembongkaran dan modifikasi. Saya juga telah menggunakan **PyArmor versi 7** untuk melindungi kode, sehingga bisa lebih aman saat digunakan oleh pihak lain.
 
-## ✨ Fitur Utama
-- **Enkripsi File dan Folder**: Menggunakan algoritma AES untuk mengenkripsi konten file dan folder.
-- **Proteksi Kode Sumber**: Lindungi kode Python Anda dari pembongkaran dan modifikasi dengan PyArmor versi 7.
-- **Dukungan untuk Nama File dan Folder**: Nama file dan subfolder ikut terenkripsi untuk keamanan tambahan.
+## ✨ Fitur Utama yang Saya Tawarkan
+- **Enkripsi File dan Folder**: Algoritma AES digunakan untuk mengenkripsi konten file dan folder Anda.
+- **Proteksi Kode Python**: Saya menggunakan PyArmor untuk melindungi kode dari modifikasi atau penyalahgunaan.
+- **Nama File dan Folder Dienkripsi**: Tidak hanya konten file, saya juga telah menambahkan fitur untuk mengenkripsi nama file dan subfolder di dalamnya.
 
-## 📜 Prasyarat
-Sebelum menggunakan proyek ini, pastikan Anda memiliki beberapa prasyarat yang terinstal di sistem Anda:
+## 📜 Persiapan Sebelum Menggunakan
+Sebelum mulai menggunakan alat ini, pastikan Anda memiliki beberapa persyaratan berikut:
 
 1. **Python 3.x** - Pastikan Python terinstal di sistem Anda.
-2. **PyArmor 7.x** - Kami menggunakan PyArmor versi 7 untuk melindungi kode sumber. Jika Anda belum memiliki PyArmor versi 7, ikuti langkah-langkah di bawah ini.
+2. **PyArmor versi 7.x** - Alat ini saya kembangkan menggunakan PyArmor versi 7 untuk proteksi kode. Jika belum terinstal, ikuti langkah instalasi di bawah ini.
 
 ### ⚙️ Instalasi PyArmor 7.x
-Untuk melindungi kode Anda, kami menggunakan **PyArmor versi 7.6.0**. Berikut langkah-langkah instalasinya:
+Saya merekomendasikan Anda untuk menggunakan **PyArmor versi 7.6.0**. Berikut adalah langkah-langkah instalasinya:
 
-1. **Uninstall PyArmor 8.x jika terinstal**:
+1. Jika Anda telah menginstal **PyArmor versi 8.x**, uninstall terlebih dahulu dengan perintah berikut:
     ```bash
     pip uninstall pyarmor
     ```
 
-2. **Instal PyArmor versi 7.x**:
+2. Selanjutnya, instal **PyArmor versi 7.x**:
     ```bash
     pip install pyarmor==7.6.0
     ```
 
-3. **Proteksi Kode Python**: Setelah PyArmor terinstal, Anda bisa mulai melindungi kode Anda dengan perintah berikut:
+3. Jika sudah, Anda bisa mulai melindungi kode Python dengan perintah:
     ```bash
     pyarmor obfuscate nama_file.py
     ```
 
-### 🛠️ Penggunaan
+### 🛠️ Cara Menggunakan Alat Ini
 
 #### 🔒 Enkripsi File dan Folder
-Untuk mengenkripsi file atau folder menggunakan alat ini, Anda bisa menjalankan skrip Python yang telah disediakan. Berikut langkah-langkahnya:
+Untuk menggunakan alat enkripsi ini, ikuti langkah-langkah berikut:
 
 1. **Jalankan Program**:
     ```bash
     python enkripsi_file.py
     ```
 
-2. **Pilih Opsi**:
+2. **Pilih Opsi yang Anda Butuhkan**:
     - `1`: Enkripsi File
     - `2`: Dekripsi File
     - `3`: Enkripsi Folder
     - `4`: Dekripsi Folder
 
-3. **Masukkan Nama File/Folder** dan password untuk mengenkripsi atau mendekripsi file dan folder Anda.
+3. **Masukkan Nama File/Folder** serta password sesuai permintaan untuk mengenkripsi atau mendekripsi file/folder.
 
-#### 🔐 Proteksi Kode Python
-Untuk melindungi kode sumber Python Anda agar tidak mudah dibaca atau diubah, ikuti langkah berikut:
+#### 🔐 Proteksi Kode Python Saya
+Untuk melindungi kode sumber dari pembongkaran atau modifikasi, saya menggunakan PyArmor. Anda juga bisa melakukan hal yang sama dengan cara berikut:
 
-1. **Obfuscasi Kode Sumber**:
-    Gunakan perintah berikut untuk mengaburkan kode Python Anda:
+1. **Obfuscasi Kode**:
+    Untuk mengacak (obfuscate) kode Python, gunakan perintah berikut:
     ```bash
     pyarmor obfuscate nama_file.py
     ```
 
-2. **Buat Lisensi untuk Distribusi**:
-    Anda dapat membuat lisensi distribusi dengan PyArmor untuk memastikan hanya pengguna berlisensi yang dapat menjalankan kode Anda:
+2. **Buat Lisensi** untuk mendistribusikan kode:
+    Saya merekomendasikan membuat lisensi sehingga hanya pengguna tertentu yang bisa menjalankan kode:
     ```bash
     pyarmor licenses -e 2024-12-31 user1
     ```
 
 3. **Buat Runtime**:
-    Untuk mengemas runtime agar kompatibel dengan file terenkripsi:
+    Jika perlu, saya juga membuat runtime untuk mendistribusikan kode dengan aman:
     ```bash
     pyarmor pack nama_file.py
     ```
 
-### 📦 Deployment
-Jika Anda ingin membagikan proyek ini kepada pengguna lain, pastikan untuk mengompilasi atau mengaburkan kode dengan **PyArmor** terlebih dahulu sebelum mendistribusikannya.
+### 📦 Proses Deployment
+Sebelum mendistribusikan proyek ini, pastikan saya atau Anda telah melakukan obfuscasi pada kode Python menggunakan **PyArmor** agar kode tidak mudah diubah oleh orang lain.
 
 ### 📝 Lisensi
-Proyek ini dilindungi oleh lisensi [MIT](LICENSE). Anda bebas menggunakan, memodifikasi, dan mendistribusikan kode ini dengan catatan menyertakan atribusi yang sesuai. 
+Alat ini saya buat dengan lisensi [MIT](LICENSE). Silakan menggunakan, memodifikasi, atau mendistribusikannya, asalkan Anda menyertakan atribusi yang sesuai.
 
 ---
 
-### 🎨 Hiasan Tambahan
-**Nikmati keamanan lebih dengan PyArmor** – kami mengutamakan **proteksi** dan **kerahasiaan** kode sumber Python Anda. Jika Anda memiliki pertanyaan atau butuh bantuan, jangan ragu untuk menghubungi kami melalui *issues*.
+### 🎨 Hiasan Tambahan dari Saya
+**Nikmati keamanan tambahan dari PyArmor** – Saya berkomitmen untuk menjaga **proteksi** dan **kerahasiaan** kode Python Anda. Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi saya melalui *issues* atau email.
 
-## 🛡️ Tetap Aman, Tetap Terenkripsi! 🛡️
+## 🛡️ Lindungi Kode Anda, Tetap Aman, Tetap Terenkripsi! 🛡️
